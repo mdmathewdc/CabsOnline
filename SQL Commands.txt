@@ -1,0 +1,15 @@
+1.Creating Customer table :
+
+
+CREATE TABLE `s102617305_db`.`customer` ( `customer name` VARCHAR(32) NOT NULL , `password` VARCHAR(32) NOT NULL , `email` VARCHAR(32) NOT NULL , `phone number` INT NOT NULL , PRIMARY KEY (`email`)) ENGINE = InnoDB;
+
+
+
+
+2. Creating Booking table :
+
+
+CREATE TABLE `s102617305_db`.`booking` ( `bookingno` VARCHAR(32), `passengeremail` VARCHAR(32), `passengername` VARCHAR(32), `passengerphone` INT, `unitno` INT, `streetnumber` VARCHAR(32), `streetname` VARCHAR(32), `suburb` VARCHAR(32), `destinationsuburb` VARCHAR(32), `pickupdate` VARCHAR(32), `pickuptime` VARCHAR(32), `bookingtime` VARCHAR(32), `status` VARCHAR(32), FOREIGN KEY (`passengeremail`) REFERENCES `customer` (`email`), PRIMARY KEY (`bookingno`)) ENGINE = InnoDB;
+
+
+
