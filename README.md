@@ -1,2 +1,2 @@
 # CabsOnline
-Online Cab booking system using HTML, JavaScript and PHP
+Online Cab booking system using HTML, CSS, JavaScript and PHP
